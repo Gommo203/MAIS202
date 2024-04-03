@@ -1,11 +1,11 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from Clusters import recommend_cocktails 
 
 app = Flask(__name__)
 
 @app.route("/")
-def home():
-    return "Home"
+def index():
+    return render_template('index.html')
 
 @app.route("/cocktails/get-recommendations/<cocktail_name>")
 def get_recommendations(cocktail_name):
