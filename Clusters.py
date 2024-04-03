@@ -47,7 +47,7 @@ def recommend_cocktails(target, num_recommendations=3):
     return COCKTAIL_NAMES[cluster_indices][nearest_indices]
 
 # Example: Recommend cocktails similar to "Margarita"
-print(recommend_cocktails('Margarita'))
+# print(recommend_cocktails('Margarita'))
 
 # # Optional: Plot the CLUSTERS
 # plt.figure(figsize=(14, 7))
