@@ -1,0 +1,33 @@
+@import "../_color";
+
+.search {
+	color: #eee;
+	background: $secondary-dark;
+	border-radius: 5em;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.search :is(input, IconButton) {
+	color: inherit;
+	border: none;
+	background: transparent;
+	outline: none;
+}
+
+.searchInput {
+	width: 0;
+	transition: width 0.5s;
+}
+
+.searchBtn {
+	color: $primary-dark;
+	display: grid;
+	place-items: center;
+	margin-left: 0.2em;
+}
+
+.search:focus-within input {
+	width: 200px;
+}
